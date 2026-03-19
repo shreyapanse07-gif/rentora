@@ -1,22 +1,48 @@
 html, body {
     height: 100%;
     margin: 0;
+    
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    font-family: 'Segoe UI', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:x-large;
     color: white;
     text-align: center;
     padding-top: 60px;
     background-repeat: no-repeat;
     background-size: cover;
+   background: linear-gradient(-45deg,#000000,#0f2027,#1a0033,#000000);
+background-size:400% 400%;
+animation: aurora 12s ease infinite;
 }
+
+@keyframes aurora{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
 h1 {
-    font-size: 3rem;
-    font-weight: bold;
+
+    font-size:80px;
+  font-weight:bold;
+  background: linear-gradient(90deg,#00ffff,#ff00ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation: glow 2s ease-in-out infinite alternate;
 }
+
+@keyframes glow{
+  from{
+    text-shadow:0 0 10px #00ffff;
+  }
+  to{
+    text-shadow:0 0 30px #ff00ff;
+  }
+}
+
 
 h4 {
     margin-bottom: 50px;
@@ -52,4 +78,41 @@ table {
 button {
     margin-top: 20px;
     width: 120px;
+}
+
+.dots-bg {
+  position: fixed;      /* 🔥 change from absolute → fixed */
+  width: 100vw;         /* full viewport width */
+  height: 100vh;        /* full viewport height */
+  top: 0;
+  left: 0;
+  z-index: -1;          /* behind content */
+  overflow: hidden;
+  pointer-events: none; /* prevents blocking clicks */
+}
+.dots-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;   /* 🔥 better than width/height */
+
+  background-image: radial-gradient(#00f5ff 1px, transparent 1px);
+  background-size: 40px 40px;
+
+  opacity: 0.15;
+
+  animation: pulseDots 6s ease-in-out infinite;
+}
+@keyframes pulseDots {
+  0% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
 }

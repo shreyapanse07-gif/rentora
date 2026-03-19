@@ -11,10 +11,15 @@ body{
 
 form div{
     width:400px;
-    background:white;
     padding:30px;
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
+     background: rgba(251, 229, 229, 0.1);
+    backdrop-filter: blur(10px);
+
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    color: white;
 }
 
 input, textarea{
