@@ -81,7 +81,7 @@ button {
 }
 
 .dots-bg {
-  position: fixed;      /* 🔥 change from absolute → fixed */
+  position: fixed;      /*  change from absolute → fixed */
   width: 100vw;         /* full viewport width */
   height: 100vh;        /* full viewport height */
   top: 0;
@@ -93,7 +93,7 @@ button {
 .dots-bg::before {
   content: "";
   position: absolute;
-  inset: 0;   /* 🔥 better than width/height */
+  inset: 0;   /*  better than width/height */
 
   background-image: radial-gradient(#00f5ff 1px, transparent 1px);
   background-size: 40px 40px;
