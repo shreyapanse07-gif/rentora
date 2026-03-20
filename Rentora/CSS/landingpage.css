@@ -90,32 +90,7 @@ button {
   overflow: hidden;
   pointer-events: none; /* prevents blocking clicks */
 }
-.dots-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;   /*  better than width/height */
 
-  background-image: radial-gradient(#00f5ff 1px, transparent 1px);
-  background-size: 40px 40px;
-
-  opacity: 0.15;
-
-  animation: pulseDots 6s ease-in-out infinite;
-}
-@keyframes pulseDots {
-  0% {
-    opacity: 0.1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.25;
-    transform: scale(1.02);
-  }
-  100% {
-    opacity: 0.1;
-    transform: scale(1);
-  }
-}
 .pop-text {
   opacity: 0;
   transform: scale(0.8);
