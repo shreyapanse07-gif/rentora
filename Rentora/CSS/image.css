@@ -1,3 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    
+    background: linear-gradient(135deg,#000000,#0f2027,#000000);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:x-large;
+    color: white;
+    text-align: center;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    padding-top: 10px;
+    font-family:monospace;
+}
+.w1{
+    color:#00F5FF;
+text-shadow:
+0 0 5px #00F5FF,
+0 0 10px #00F5FF,
+0 0 20px #00F5FF,
+0 0 40px #00F5FF; 
+}
 .image
 {
     width: 100%;
@@ -59,4 +87,55 @@ td
 }
 a{
     text-decoration: none;
+}
+.card {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 15px;
+  height: 350px;       /* reduce this value as you like */
+  overflow: hidden; 
+}
+
+.custom-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+
+.card h5 {
+  font-size: 17px;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card button {
+  padding: 5px 12px;
+  font-size: 13px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,255,255,0.3);
+}
+
+.card.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+}
+.custom-img {
+  height: 200px;
+  object-fit: contain;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }

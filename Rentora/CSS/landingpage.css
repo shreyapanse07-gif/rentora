@@ -26,12 +26,13 @@ animation: aurora 12s ease infinite;
 
 h1 {
 
-    font-size:80px;
+    font-size:100px;
   font-weight:bold;
   background: linear-gradient(90deg,#00ffff,#ff00ff);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation: glow 2s ease-in-out infinite alternate;
+  
 }
 
 @keyframes glow{
@@ -78,17 +79,6 @@ table {
 button {
     margin-top: 20px;
     width: 120px;
-}
-
-.dots-bg {
-  position: fixed;      /*  change from absolute → fixed */
-  width: 100vw;         /* full viewport width */
-  height: 100vh;        /* full viewport height */
-  top: 0;
-  left: 0;
-  z-index: -1;          /* behind content */
-  overflow: hidden;
-  pointer-events: none; /* prevents blocking clicks */
 }
 
 .pop-text {
